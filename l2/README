@@ -1,0 +1,26 @@
+TO CHECK:
+python3.6 pacman.py
+QUESTION 1 :
+python3.6 pacman.py -p ReflexAgent
+python3.6 pacman.py -p ReflexAgent -l testClassic
+python3.6 pacman.py --frameTime 0 -p ReflexAgent -k 1
+python3.6 pacman.py --frameTime 0 -p ReflexAgent -k 2
+python3.6 autograder.py -q q1
+python3.6 autograder.py -q q1 --no-graphics
+QUESTION 2:
+python3.6 autograder.py -q q2
+python3.6 autograder.py -q q2 --no-graphics
+python3.6 python pacman.py -p MinimaxAgent -l minimaxClassic -a depth=4
+python3.6 pacman.py -p MinimaxAgent -l trappedClassic -a depth=3
+QUESTION 3:
+python3.6 pacman.py -p AlphaBetaAgent -a depth=3 -l smallClassic
+python3.6 autograder.py -q q3
+python3.6 autograder.py -q q3 --no-graphics
+QUESTION 4:
+1
+python3.6 autograder.py -q q4
+python3.6 pacman.py -p ExpectimaxAgent -l minimaxClassic -a depth=3
+python3.6 pacman.py -p AlphaBetaAgent -l trappedClassic -a depth=3 -q -n 10
+python3.6 pacman.py pacman.py -p ExpectimaxAgent -l trappedClassic -a depth=3 -q -n 10
+QUESTION 5:
+python3.6 autograder.py -q q5
